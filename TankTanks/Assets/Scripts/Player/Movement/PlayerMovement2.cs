@@ -8,7 +8,12 @@ public class PlayerMovement2 : MonoBehaviour
 
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
-    public float isoAngle = 45f; // Adjust to match your isometric camera angle
+    public float isoAngle = 45f;
+    public float rotationSpeed = 10f;
+
+    public Transform bodyChild;
+
+
 
     private void Awake()
     {
@@ -24,13 +29,15 @@ public class PlayerMovement2 : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Convert 2D input into 3D isometric movement
         Vector3 move = new Vector3(moveInput.x, 0, moveInput.y);
-
-        // Rotate input to align with isometric camera angle
         move = Quaternion.Euler(0, isoAngle, 0) * move;
 
-        // Apply velocity directly
         rb.linearVelocity = move * moveSpeed;
+
+        if (move.sqrMagnitude > 0.01f && bodyChild != null)
+        {
+            Quaternion targetRot = Quaternion.LookRotation(move, Vector3.up);
+            bodyChild.rotation = Quaternion.Slerp(bodyChild.rotation, targetRot, rotationSpeed * Time.fixedDeltaTime);
+        }
     }
 }
