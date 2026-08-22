@@ -540,6 +540,8 @@ GameObject:
   - component: {fileID: 689344696}
   - component: {fileID: 689344698}
   - component: {fileID: 689344699}
+  - component: {fileID: 689344701}
+  - component: {fileID: 689344700}
   m_Layer: 0
   m_Name: 'PlayerTank '
   m_TagString: Untagged
@@ -641,7 +643,19 @@ MonoBehaviour:
     m_ActionId: 2438e74b-24c5-48af-a41b-03c4b5f533f8
     m_ActionName: Player/Heal
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 689344701}
+        m_TargetAssemblyTypeName: Aiming2, Assembly-CSharp
+        m_MethodName: Aimming
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 734eef66-5a86-412a-ab12-b3f06a511968
     m_ActionName: 'Player/Aiming[/Mouse/delta]'
   m_NeverAutoSwitchControlSchemes: 0
@@ -666,6 +680,35 @@ MonoBehaviour:
   isoAngle: 35
   rotationSpeed: 10
   bodyChild: {fileID: 202526135}
+--- !u!114 &689344700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689344695}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617d27d5f6d810242a03124bbdb0a866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AimingBehaviour
+  isoAngle: 45
+  speedRotation: 10
+  weaponChild: {fileID: 1923483176}
+--- !u!114 &689344701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689344695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd4ae4e3e301a04292cdf389200ae7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Aiming2
+  rotationSpeed: 10
+  weaponChild: {fileID: 1923483176}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,7 +1297,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 3.6958, y: 3.6958, z: 3.6958}
+  m_LocalScale: {x: 16.57118, y: 16.57118, z: 16.57118}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
