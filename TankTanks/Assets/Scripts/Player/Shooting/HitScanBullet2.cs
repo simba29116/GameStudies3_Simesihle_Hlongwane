@@ -25,22 +25,23 @@ public class HitScanBullet2 : MonoBehaviour
     void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
-        shootAction = playerInput.actions["Shoot"]; // Ensure you have a "Shoot" action in your InputActions asset
+        shootAction = playerInput.actions["Shooting"]; //ShootAction
     }
 
     void OnEnable()
     {
-        shootAction.performed += OnShootStarted;
+        shootAction.performed += Shooting;
         shootAction.canceled += OnShootCanceled;
     }
 
     void OnDisable()
     {
-        shootAction.performed -= OnShootStarted;
+        shootAction.performed -= Shooting
+            ;
         shootAction.canceled -= OnShootCanceled;
     }
 
-    private void OnShootStarted(InputAction.CallbackContext ctx)
+    private void Shooting(InputAction.CallbackContext ctx)
     {
         isShooting = true;
     }
