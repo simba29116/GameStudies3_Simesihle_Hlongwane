@@ -1,21 +1,23 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
+using System.Collections;
 
-public class EndGameOnTrigger : MonoBehaviour
+public class SceneTrigger : MonoBehaviour
 {
-   
+    [SerializeField] private string sceneName;
 
     private void OnTriggerEnter(Collider other)
     {
-        
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Game Over Triggered!");
-
-            //No game over scene yet, so just log a message for now, its about speed running the game
-            //SceneManager.LoadScene(gameOverScene);
-            
-           
+            StartCoroutine(LoadSceneAfterDelay());
         }
     }
+
+    private IEnumerator LoadSceneAfterDelay()
+    {
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(sceneName);
+    }
 }
+

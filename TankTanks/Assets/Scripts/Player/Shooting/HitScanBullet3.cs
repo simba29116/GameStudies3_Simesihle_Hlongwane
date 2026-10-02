@@ -79,14 +79,23 @@ public class HitScanBullet3 : MonoBehaviour
         if (Physics.Raycast(RayCastPoint.position, direction, out RaycastHit hit, Mathf.Infinity, Mask))
         {
             // Trail
-            TrailRenderer trail = Instantiate(BulletTrail, RayCastPoint.position, Quaternion.identity);
+            // TrailRenderer trail = Instantiate(BulletTrail, RayCastPoint.position, Quaternion.identity);
+            // StartCoroutine(SpawnTrail(trail, hit.point));
+            GameObject trailObj = GenericPooling.Instance.SpawnFromPool("BulletTrail", RayCastPoint.position, Quaternion.identity);
+            TrailRenderer trail =trailObj.GetComponent<TrailRenderer>();
+            trail.Clear();
             StartCoroutine(SpawnTrail(trail, hit.point));
 
             // Impact
             if (ImpactEffect != null)
             {
-                ParticleSystem impact = Instantiate(ImpactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-                Destroy(impact.gameObject, impact.main.duration);
+               // ParticleSystem impact = Instantiate(ImpactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+               // Destroy(impact.gameObject, impact.main.duration);
+                GameObject impactObj =GenericPooling.Instance.SpawnFromPool( "ImpactEffect",hit.point, Quaternion.LookRotation(hit.normal));
+                ParticleSystem impact =impactObj.GetComponent<ParticleSystem>();
+                
+                impact.Play();
+                impact.gameObject.SetActive(false);
             }
         }
     }
@@ -119,7 +128,8 @@ public class HitScanBullet3 : MonoBehaviour
         }
 
         trail.transform.position = hitPoint;
-        Destroy(trail.gameObject, trail.time);
+       // Destroy(trail.gameObject, trail.time);
+        trail.gameObject.SetActive(false);
     }
 
 }

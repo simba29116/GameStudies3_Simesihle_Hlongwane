@@ -13,7 +13,7 @@ public class Dash2 : MonoBehaviour
     public float dashCooldown = 0.7f;   // cooldown between dashes
     public float dashDuration = 0.2f;   // optional: how long dash effect lasts
 
-    private bool isDashing;
+    private bool isDashing; 
     private Vector3 dashDirection;
 
     private void Awake()
