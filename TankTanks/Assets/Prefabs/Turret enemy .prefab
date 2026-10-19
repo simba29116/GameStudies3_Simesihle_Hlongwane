@@ -442,7 +442,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 866753372482350217}
-  - component: {fileID: 8330931693131538474}
   - component: {fileID: 8001536493496440960}
   - component: {fileID: 153392603016622435}
   - component: {fileID: 8112425345221913411}
@@ -472,27 +471,6 @@ Transform:
   - {fileID: 227505433817324132}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8330931693131538474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4784362050891306416}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8caeb8d8b32cef345bb62273f739d718, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gun: {fileID: 8001536493496440960}
-  mountPoints:
-  - {fileID: 695919843928609663}
-  - {fileID: 5239656046994694401}
-  target: {fileID: 0}
-  detectionRadius: 8
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &8001536493496440960
 MonoBehaviour:
   m_ObjectHideFlags: 0
