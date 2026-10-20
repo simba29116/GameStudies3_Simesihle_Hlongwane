@@ -42,10 +42,10 @@ public class EnemySpawner : MonoBehaviour
         return enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
     }*/
 
-    GameObject GetRandomAbility()
+    /*GameObject GetRandomAbility()
     {
         return abilityPrefabs[Random.Range(0, abilityPrefabs.Length)];
-    }
+    }*/
 
 
     void SpawnWave()
@@ -59,10 +59,10 @@ public class EnemySpawner : MonoBehaviour
         }
 
         // Guaranteed abilities
-        for (int i = 0; i < minAbilities; i++)
+        /*for (int i = 0; i < minAbilities; i++)
         {
             SpawnObject(GetRandomAbility(), availablePoints);
-        }
+        }*/
 
         // Extra random enemies
         for (int i = minEnemies; i < maxEnemies; i++)
@@ -74,13 +74,13 @@ public class EnemySpawner : MonoBehaviour
         }
 
         // Extra random abilities
-        for (int i = minAbilities; i < maxAbilities; i++)
+       /* for (int i = minAbilities; i < maxAbilities; i++)
         {
             if (Random.value < 0.25f)
             {
                 SpawnObject(GetRandomAbility(), availablePoints);
             }
-        }
+        }*/
     }
 
 
