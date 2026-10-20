@@ -6,6 +6,7 @@ public class EnemyShooter : MonoBehaviour
 {
     [Header("Detection Settings")]
     public float detectionRadius = 8f;
+    public float detectionRange; 
     public LayerMask playerLayer;
 
     [Header("Shooting Settings")]

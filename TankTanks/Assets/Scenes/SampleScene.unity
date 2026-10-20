@@ -129,11 +129,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3192559}
   - component: {fileID: 3192558}
+  - component: {fileID: 3192560}
   - component: {fileID: 3192557}
   - component: {fileID: 3192556}
   m_Layer: 7
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -231,6 +232,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 299823110}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &3192560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3192555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &11099808
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,11 +254,12 @@ GameObject:
   m_Component:
   - component: {fileID: 11099812}
   - component: {fileID: 11099811}
+  - component: {fileID: 11099813}
   - component: {fileID: 11099810}
   - component: {fileID: 11099809}
   m_Layer: 7
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -343,6 +357,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 299823110}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &11099813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11099808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &27127364
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,10 +417,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -628,11 +654,12 @@ GameObject:
   m_Component:
   - component: {fileID: 68194624}
   - component: {fileID: 68194623}
+  - component: {fileID: 68194625}
   - component: {fileID: 68194622}
   - component: {fileID: 68194621}
   m_Layer: 7
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -730,6 +757,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 299823110}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &68194625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68194620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &139707932
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,11 +841,12 @@ GameObject:
   m_Component:
   - component: {fileID: 171326715}
   - component: {fileID: 171326718}
+  - component: {fileID: 171326719}
   - component: {fileID: 171326717}
   - component: {fileID: 171326716}
   m_Layer: 7
   m_Name: Cube (10)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -904,6 +944,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171326714}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &171326719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171326714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &184717027
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,11 +966,12 @@ GameObject:
   m_Component:
   - component: {fileID: 184717028}
   - component: {fileID: 184717031}
+  - component: {fileID: 184717032}
   - component: {fileID: 184717030}
   - component: {fileID: 184717029}
   m_Layer: 7
   m_Name: Cube (7)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1016,6 +1069,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184717027}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &184717032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184717027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &243598524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,11 +1091,12 @@ GameObject:
   m_Component:
   - component: {fileID: 243598525}
   - component: {fileID: 243598528}
+  - component: {fileID: 243598529}
   - component: {fileID: 243598527}
   - component: {fileID: 243598526}
   m_Layer: 7
   m_Name: Cube (34)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1128,6 +1194,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 243598524}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &243598529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243598524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &250047995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,7 +1270,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -240, y: -132}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &261709932
@@ -1228,7 +1306,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 229, y: 4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &285641967
@@ -1240,12 +1318,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 285641968}
+  - component: {fileID: 285641972}
   - component: {fileID: 285641971}
   - component: {fileID: 285641970}
   - component: {fileID: 285641969}
   m_Layer: 7
   m_Name: Cube (11)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1343,6 +1422,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285641967}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &285641972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285641967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &287646569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1353,11 +1444,12 @@ GameObject:
   m_Component:
   - component: {fileID: 287646570}
   - component: {fileID: 287646573}
+  - component: {fileID: 287646574}
   - component: {fileID: 287646572}
   - component: {fileID: 287646571}
   m_Layer: 7
   m_Name: Cube (8)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1455,6 +1547,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287646569}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &287646574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287646569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &299823109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1466,7 +1570,7 @@ GameObject:
   - component: {fileID: 299823110}
   m_Layer: 7
   m_Name: Other "rooms"
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1506,11 +1610,12 @@ GameObject:
   m_Component:
   - component: {fileID: 307720790}
   - component: {fileID: 307720793}
+  - component: {fileID: 307720794}
   - component: {fileID: 307720792}
   - component: {fileID: 307720791}
   m_Layer: 7
   m_Name: Cube (16)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1608,6 +1713,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 307720789}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &307720794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307720789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &315321084
 GameObject:
   m_ObjectHideFlags: 0
@@ -1904,12 +2021,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 359475781}
+  - component: {fileID: 359475785}
   - component: {fileID: 359475784}
   - component: {fileID: 359475783}
   - component: {fileID: 359475782}
   m_Layer: 7
   m_Name: Cube (26)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2007,6 +2125,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359475780}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &359475785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359475780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &361017271
 GameObject:
   m_ObjectHideFlags: 0
@@ -2268,11 +2398,12 @@ GameObject:
   m_Component:
   - component: {fileID: 533890431}
   - component: {fileID: 533890434}
+  - component: {fileID: 533890435}
   - component: {fileID: 533890433}
   - component: {fileID: 533890432}
   m_Layer: 7
   m_Name: Cube (9)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2370,6 +2501,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 533890430}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &533890435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533890430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &533912195
 GameObject:
   m_ObjectHideFlags: 0
@@ -2442,11 +2585,12 @@ GameObject:
   m_Component:
   - component: {fileID: 578396599}
   - component: {fileID: 578396602}
+  - component: {fileID: 578396603}
   - component: {fileID: 578396601}
   - component: {fileID: 578396600}
   m_Layer: 7
   m_Name: Cube (25)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2544,6 +2688,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578396598}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &578396603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578396598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &591450066
 GameObject:
   m_ObjectHideFlags: 0
@@ -2553,12 +2709,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 591450067}
+  - component: {fileID: 591450071}
   - component: {fileID: 591450070}
   - component: {fileID: 591450069}
   - component: {fileID: 591450068}
   m_Layer: 7
   m_Name: Cube (31)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2656,6 +2813,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591450066}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &591450071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591450066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &684517126
 GameObject:
   m_ObjectHideFlags: 0
@@ -2666,11 +2835,12 @@ GameObject:
   m_Component:
   - component: {fileID: 684517127}
   - component: {fileID: 684517130}
+  - component: {fileID: 684517131}
   - component: {fileID: 684517129}
   - component: {fileID: 684517128}
   m_Layer: 7
   m_Name: Cube (13)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2768,6 +2938,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 684517126}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &684517131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684517126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!4 &689344697 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5353491505699023464, guid: 2f3549d7c22222e4fb0424ed78f99b47, type: 3}
@@ -3079,11 +3261,12 @@ GameObject:
   m_Component:
   - component: {fileID: 835295442}
   - component: {fileID: 835295445}
+  - component: {fileID: 835295446}
   - component: {fileID: 835295444}
   - component: {fileID: 835295443}
   m_Layer: 7
   m_Name: Cube (10)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3181,6 +3364,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 835295441}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &835295446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835295441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &843224877
 GameObject:
   m_ObjectHideFlags: 0
@@ -3191,11 +3386,12 @@ GameObject:
   m_Component:
   - component: {fileID: 843224881}
   - component: {fileID: 843224880}
+  - component: {fileID: 843224882}
   - component: {fileID: 843224879}
   - component: {fileID: 843224878}
   m_Layer: 7
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3293,6 +3489,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 299823110}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &843224882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843224877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &845268764
 GameObject:
   m_ObjectHideFlags: 0
@@ -3417,11 +3625,12 @@ GameObject:
   m_Component:
   - component: {fileID: 856793553}
   - component: {fileID: 856793556}
+  - component: {fileID: 856793557}
   - component: {fileID: 856793555}
   - component: {fileID: 856793554}
   m_Layer: 7
   m_Name: Cube (22)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3519,6 +3728,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856793552}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &856793557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856793552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &860345872
 GameObject:
   m_ObjectHideFlags: 0
@@ -3528,12 +3749,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 860345873}
+  - component: {fileID: 860345877}
   - component: {fileID: 860345876}
   - component: {fileID: 860345875}
   - component: {fileID: 860345874}
   m_Layer: 7
   m_Name: Cube (30)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3631,6 +3853,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 860345872}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &860345877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860345872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &863449019
 GameObject:
   m_ObjectHideFlags: 0
@@ -3672,11 +3906,12 @@ GameObject:
   m_Component:
   - component: {fileID: 887738858}
   - component: {fileID: 887738857}
+  - component: {fileID: 887738859}
   - component: {fileID: 887738856}
   - component: {fileID: 887738855}
   m_Layer: 7
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3774,6 +4009,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 299823110}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &887738859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887738854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &896398903
 GameObject:
   m_ObjectHideFlags: 0
@@ -3929,11 +4176,12 @@ GameObject:
   m_Component:
   - component: {fileID: 923155107}
   - component: {fileID: 923155110}
+  - component: {fileID: 923155111}
   - component: {fileID: 923155109}
   - component: {fileID: 923155108}
   m_Layer: 7
   m_Name: Cube (33)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4031,6 +4279,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 923155106}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &923155111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923155106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &1009919909
 GameObject:
   m_ObjectHideFlags: 0
@@ -4229,11 +4489,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1022645874}
   - component: {fileID: 1022645877}
+  - component: {fileID: 1022645878}
   - component: {fileID: 1022645876}
   - component: {fileID: 1022645875}
   m_Layer: 7
   m_Name: Cube (17)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4331,6 +4592,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1022645873}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1022645878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022645873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &1105784341
 GameObject:
   m_ObjectHideFlags: 0
@@ -4595,11 +4868,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1147294482}
   - component: {fileID: 1147294485}
+  - component: {fileID: 1147294486}
   - component: {fileID: 1147294484}
   - component: {fileID: 1147294483}
   m_Layer: 7
   m_Name: Cube (12)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4697,6 +4971,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147294481}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1147294486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147294481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &1173313197
 GameObject:
   m_ObjectHideFlags: 0
@@ -4707,11 +4993,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1173313198}
   - component: {fileID: 1173313201}
+  - component: {fileID: 1173313202}
   - component: {fileID: 1173313200}
   - component: {fileID: 1173313199}
   m_Layer: 7
   m_Name: Cube (8)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4809,6 +5096,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173313197}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1173313202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173313197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &1268998221
 GameObject:
   m_ObjectHideFlags: 0
@@ -4850,11 +5149,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1307507180}
   - component: {fileID: 1307507183}
+  - component: {fileID: 1307507184}
   - component: {fileID: 1307507182}
   - component: {fileID: 1307507181}
   m_Layer: 7
   m_Name: Cube (14)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4952,6 +5252,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307507179}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1307507184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307507179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &1359185592
 GameObject:
   m_ObjectHideFlags: 0
@@ -4993,11 +5305,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1359220219}
   - component: {fileID: 1359220222}
+  - component: {fileID: 1359220223}
   - component: {fileID: 1359220221}
   - component: {fileID: 1359220220}
   m_Layer: 7
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5095,6 +5408,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359220218}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1359220223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359220218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &1375998174
 GameObject:
   m_ObjectHideFlags: 0
@@ -5105,11 +5430,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1375998175}
   - component: {fileID: 1375998178}
+  - component: {fileID: 1375998179}
   - component: {fileID: 1375998177}
   - component: {fileID: 1375998176}
   m_Layer: 7
   m_Name: Cube (15)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5207,6 +5533,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1375998174}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1375998179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375998174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &1424675031
 GameObject:
   m_ObjectHideFlags: 0
@@ -5415,12 +5753,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1502787859}
+  - component: {fileID: 1502787863}
   - component: {fileID: 1502787862}
   - component: {fileID: 1502787861}
   - component: {fileID: 1502787860}
   m_Layer: 7
   m_Name: Cube (32)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5518,6 +5857,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1502787858}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1502787863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502787858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &1513922175
 GameObject:
   m_ObjectHideFlags: 0
@@ -5528,11 +5879,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1513922176}
   - component: {fileID: 1513922179}
+  - component: {fileID: 1513922180}
   - component: {fileID: 1513922178}
   - component: {fileID: 1513922177}
   m_Layer: 7
   m_Name: Cube (18)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5630,6 +5982,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513922175}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1513922180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513922175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &1530301747
 GameObject:
   m_ObjectHideFlags: 0
@@ -5639,12 +6003,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1530301748}
+  - component: {fileID: 1530301752}
   - component: {fileID: 1530301751}
   - component: {fileID: 1530301750}
   - component: {fileID: 1530301749}
   m_Layer: 7
   m_Name: Cube (23)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5742,6 +6107,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1530301747}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1530301752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530301747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &1591989819
 GameObject:
   m_ObjectHideFlags: 0
@@ -5751,12 +6128,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1591989820}
+  - component: {fileID: 1591989824}
   - component: {fileID: 1591989823}
   - component: {fileID: 1591989822}
   - component: {fileID: 1591989821}
   m_Layer: 7
   m_Name: Cube (29)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5854,6 +6232,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591989819}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1591989824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591989819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &1594370249
 GameObject:
   m_ObjectHideFlags: 0
@@ -5864,11 +6254,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1594370250}
   - component: {fileID: 1594370253}
+  - component: {fileID: 1594370254}
   - component: {fileID: 1594370252}
   - component: {fileID: 1594370251}
   m_Layer: 7
   m_Name: Cube (28)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5966,6 +6357,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594370249}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1594370254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594370249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &1612104974
 GameObject:
   m_ObjectHideFlags: 0
@@ -6553,11 +6956,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1695934251}
   - component: {fileID: 1695934254}
+  - component: {fileID: 1695934255}
   - component: {fileID: 1695934253}
   - component: {fileID: 1695934252}
   m_Layer: 7
   m_Name: Cube (9)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6655,6 +7059,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1695934250}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1695934255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695934250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &1712089850
 GameObject:
   m_ObjectHideFlags: 0
@@ -6743,7 +7159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -244, y: -147}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1746872104
@@ -6756,11 +7172,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1746872105}
   - component: {fileID: 1746872108}
+  - component: {fileID: 1746872109}
   - component: {fileID: 1746872107}
   - component: {fileID: 1746872106}
   m_Layer: 7
   m_Name: Cube (27)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6858,6 +7275,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746872104}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1746872109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746872104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &1752313749
 GameObject:
   m_ObjectHideFlags: 0
@@ -6930,11 +7359,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1768536306}
   - component: {fileID: 1768536309}
+  - component: {fileID: 1768536310}
   - component: {fileID: 1768536308}
   - component: {fileID: 1768536307}
   m_Layer: 7
   m_Name: Cube (20)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7032,6 +7462,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768536305}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1768536310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768536305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &1769764937
 GameObject:
   m_ObjectHideFlags: 0
@@ -7043,7 +7485,7 @@ GameObject:
   - component: {fileID: 1769764938}
   m_Layer: 7
   m_Name: Deco inRoom
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7195,11 +7637,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1814777459}
   - component: {fileID: 1814777462}
+  - component: {fileID: 1814777463}
   - component: {fileID: 1814777461}
   - component: {fileID: 1814777460}
   m_Layer: 7
   m_Name: Cube (24)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7297,6 +7740,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1814777458}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1814777463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814777458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &1817570511
 GameObject:
   m_ObjectHideFlags: 0
@@ -7338,11 +7793,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1835104738}
   - component: {fileID: 1835104741}
+  - component: {fileID: 1835104742}
   - component: {fileID: 1835104740}
   - component: {fileID: 1835104739}
   m_Layer: 7
   m_Name: Cube (19)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7440,6 +7896,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835104737}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1835104742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835104737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &1902278010
 GameObject:
   m_ObjectHideFlags: 0
@@ -7563,11 +8031,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1965932211}
   - component: {fileID: 1965932214}
+  - component: {fileID: 1965932215}
   - component: {fileID: 1965932213}
   - component: {fileID: 1965932212}
   m_Layer: 7
   m_Name: Cube (21)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7665,6 +8134,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965932210}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1965932215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965932210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68482b3ff3172704ca1eb5d6540a0425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletWallkiller
 --- !u!1 &2030938155
 GameObject:
   m_ObjectHideFlags: 0
@@ -7886,6 +8367,18 @@ PrefabInstance:
       propertyPath: AmmoText
       value: 
       objectReference: {fileID: 45545120}
+    - target: {fileID: 4863217111131593685, guid: 2f3549d7c22222e4fb0424ed78f99b47, type: 3}
+      propertyPath: BulletSpread.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4863217111131593685, guid: 2f3549d7c22222e4fb0424ed78f99b47, type: 3}
+      propertyPath: BulletSpread.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4863217111131593685, guid: 2f3549d7c22222e4fb0424ed78f99b47, type: 3}
+      propertyPath: BulletSpread.z
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 5353491505699023464, guid: 2f3549d7c22222e4fb0424ed78f99b47, type: 3}
       propertyPath: m_LocalPosition.x
       value: -92.5
@@ -7929,6 +8422,10 @@ PrefabInstance:
     - target: {fileID: 6558911604185637281, guid: 2f3549d7c22222e4fb0424ed78f99b47, type: 3}
       propertyPath: m_Name
       value: 'PlayerTank '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558911604185637281, guid: 2f3549d7c22222e4fb0424ed78f99b47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -1,4 +1,7 @@
+using System.Diagnostics;
+using Unity.Cinemachine;
 using UnityEngine;
+
 
 public class bullet : MonoBehaviour
 {
@@ -6,6 +9,7 @@ public class bullet : MonoBehaviour
     public float speed = 5f;
     public float lifetime = 5f;
     public LayerMask hitLayers;
+    public TagList tagList;
     private float lifeTimer;
 
     private void OnEnable()
@@ -27,9 +31,22 @@ public class bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        
+
         if (((1 << collision.gameObject.layer) & hitLayers) != 0)
         {
             gameObject.SetActive(false);
         }
+        
+        if (collision.gameObject.CompareTag("Walls"))
+        {
+            gameObject.SetActive(false);
+            
+        }
+
+
     }
+
+
+
 }
