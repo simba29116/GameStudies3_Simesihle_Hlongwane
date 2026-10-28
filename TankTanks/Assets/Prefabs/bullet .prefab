@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4169877748130356207}
   - component: {fileID: 1558222776563358534}
   - component: {fileID: 5794205262764766004}
+  - component: {fileID: 5649887481898836818}
   - component: {fileID: 8966042839523138907}
   m_Layer: 8
   m_Name: 'bullet '
@@ -131,6 +132,20 @@ MonoBehaviour:
   hitLayers:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &5649887481898836818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7948516945893524769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4da4e2128f84c084e8ab43e48a7c1879, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
+  pHealth: {fileID: 6032969670590274973, guid: ab81e5a4cfdeff141b08fdd80506be57, type: 3}
+  damage: 20
 --- !u!54 &8966042839523138907
 Rigidbody:
   m_ObjectHideFlags: 0
