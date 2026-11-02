@@ -5,7 +5,7 @@ using TMPro;
 
 public class HitScanBullet4 : MonoBehaviour
 {
-    [Header("References")]
+   [Header("References")]
     public Transform RayCastPoint;
 
     [Header("Pool Tags")]

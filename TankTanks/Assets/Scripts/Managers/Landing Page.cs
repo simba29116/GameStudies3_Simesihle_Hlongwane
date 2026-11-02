@@ -73,4 +73,11 @@ public class LandingPage : MonoBehaviour
 
         SceneManager.LoadScene("SampleScene");
     }
+
+
+    public void restartScene()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
