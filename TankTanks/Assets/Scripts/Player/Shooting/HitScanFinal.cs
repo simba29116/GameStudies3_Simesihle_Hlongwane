@@ -314,7 +314,8 @@ public class HitScanFinal : MonoBehaviour
 
     public void showimage()
     {
-        OverheatWarning.enabled = true;
+        Debug.Log("show image");
+        OverheatWarning.gameObject.SetActive(true);
     }
 
 }

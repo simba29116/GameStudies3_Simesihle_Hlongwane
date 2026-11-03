@@ -8,7 +8,7 @@ public class InfiniteAmmoBase : PickUpBase
     [SerializeField] private float duration = 10f;
 
     private static Coroutine activeCoroutine;
-    UniversalPowerupBar PowerupBar;
+    public UniversalPowerupBar PowerupBar;
 
     protected override void ApplyEffect(GameObject Player) //This is currently not working!!!!!!!!
     {

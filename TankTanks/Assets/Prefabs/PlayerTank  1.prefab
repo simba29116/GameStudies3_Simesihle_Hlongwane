@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7926687966723514003}
   - component: {fileID: 515276897613360702}
   - component: {fileID: 6869490290114680826}
-  - component: {fileID: 6944443220991252539}
   - component: {fileID: 253616111303649551}
   - component: {fileID: 8295726943844095404}
   - component: {fileID: 4786322646991450053}
@@ -170,34 +169,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &6944443220991252539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 868018937733359841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f0bc48695ec9e741b6c8da59668bfb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HitScanBullet4
-  RayCastPoint: {fileID: 463208463980842069}
-  TrailPoolTag: BulletTrail
-  ImpactPoolTag: ImpactEffect
-  MuzzleFlashPoolTag: MuzzleFlash
-  AddBulletSpread: 0
-  BulletSpread: {x: 0.7, y: 0, z: 0.7}
-  ShootDelay: 0.2
-  MissDistance: 200
-  Mask:
-    serializedVersion: 2
-    m_Bits: 128
-  Damage: 10
-  MaxAmmo: 10
-  CurrentAmmo: 0
-  ReloadTime: 1.5
-  AmmoText: {fileID: 0}
 --- !u!114 &253616111303649551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,6 +238,8 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   HealthBar: {fileID: 0}
+  fadeCode: {fileID: 0}
+  gameOverScreen: {fileID: 0}
 --- !u!1 &1000518037516801603
 GameObject:
   m_ObjectHideFlags: 0

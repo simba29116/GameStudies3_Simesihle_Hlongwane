@@ -1653,7 +1653,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 204779138}
-  - {fileID: 1260077104}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &315321087
@@ -2192,7 +2191,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!136 &442252392
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2302,6 +2301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InfiniteAmmoBase
   lifetime: 3.5
   duration: 7
+  PowerupBar: {fileID: 1984009939}
 --- !u!1 &460707574
 GameObject:
   m_ObjectHideFlags: 0
@@ -5619,52 +5619,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &1260077103
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1260077104}
-  - component: {fileID: 1260077105}
-  m_Layer: 0
-  m_Name: PowerUpBar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1260077104
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1260077103}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 315321086}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1260077105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1260077103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fac5351f743a404c935d21a42f1910d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UniversalPowerupBar
-  fillImage: {fileID: 1139394033}
-  barParent: {fileID: 1809423932}
 --- !u!1 &1268998221
 GameObject:
   m_ObjectHideFlags: 0
@@ -6378,7 +6332,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1059, y: 510}
+  m_AnchoredPosition: {x: 1039, y: 510}
   m_SizeDelta: {x: 347.5341, y: 129.0863}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1486551111
@@ -6467,7 +6421,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -114.64661, w: 0}
+  m_margin: {x: 0, y: 0, z: 45.167477, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -9371,6 +9325,7 @@ GameObject:
   - component: {fileID: 1984009936}
   - component: {fileID: 1984009938}
   - component: {fileID: 1984009937}
+  - component: {fileID: 1984009939}
   m_Layer: 5
   m_Name: AbilityTime
   m_TagString: Untagged
@@ -9436,6 +9391,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984009935}
   m_CullTransparentMesh: 1
+--- !u!114 &1984009939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984009935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fac5351f743a404c935d21a42f1910d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UniversalPowerupBar
+  fillImage: {fileID: 1139394033}
+  barParent: {fileID: 1809423932}
 --- !u!4 &2027321616 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 463208463980842069, guid: ab81e5a4cfdeff141b08fdd80506be57, type: 3}
@@ -9775,8 +9744,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6944443220991252539, guid: ab81e5a4cfdeff141b08fdd80506be57, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
