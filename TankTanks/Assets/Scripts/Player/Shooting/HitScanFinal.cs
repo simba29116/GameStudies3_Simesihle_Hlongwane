@@ -2,6 +2,7 @@ using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
+using Unity.VisualScripting;
 
 
 public class HitScanFinal : MonoBehaviour
@@ -32,13 +33,15 @@ public class HitScanFinal : MonoBehaviour
     public float CoolRate = 15f;
     public float OverheatThreshold = 100f;
     public float CooldownThreshold = 30f;
-
     private bool isOverheated;
 
-    private bool isReloading;
+  
 
     [Header("UI")]
     public Image HeatBar;
+    public Image OverheatWarning; 
+    
+
 
 
     private float LastShootTime;
@@ -52,12 +55,14 @@ public class HitScanFinal : MonoBehaviour
     {
         playerInput = GetComponent<PlayerInput>();
         shootAction = playerInput.actions["Shooting"];
+        
     }
 
     private void Start()
     {
         
         UpdateHeatUI();
+        showimage();
     }
 
     private void OnEnable()
@@ -291,9 +296,26 @@ public class HitScanFinal : MonoBehaviour
         {
             HeatBar.fillAmount = CurrentHeat / MaxHeat;
         }
+
+        float heatPercent = CurrentHeat / MaxHeat;
+        if (OverheatWarning != null)
+        {
+            Color warningColor = OverheatWarning.color;
+
+            // Starts becoming visible at 60% heat
+           float warningAlpha =
+                Mathf.InverseLerp(0.6f, 1f, heatPercent);
+
+            warningColor.a = warningAlpha * 0.4f;
+
+            OverheatWarning.color = warningColor;
+        }
     }
 
-    
+    public void showimage()
+    {
+        OverheatWarning.enabled = true;
+    }
 
 }
 
